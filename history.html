@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link href="history.css" rel="stylesheet" />
+  <link href="index_layout.css" rel="stylesheet" />
+  <!--Google Font styles-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.jpg" alt="business-logo" class="img-logo" href="main.html"/>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="history.html">History of Pizza</a>
+      <a href="events.html">Events Calendar</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  body {color: black;
+  font-family: 'Quicksand';
+}
+  section {background-color: white;
+  text-align: left;
+  box-shadow: 0 10px 40px 0 grey;}
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+h1 {
+  background-color: white;
+  box-shadow: 0 10px 40px 0 lightgrey;
+  text-align: center;
+}
+  p {margin: 20px;}
+
+  hr { border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));}
+
+    @media screen and (max-width: 700px) {
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-logo {
+        display: none;
+      }
+
+      .nav-links {
+        margin: 3em 0;
+        font-size: 13px;
+      }
+    }
+
+    @media screen and (max-width: 950px) {
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-logo {
+        display: none;
+      }
+
+      .nav-links {
+        margin: 3em 0;
+      }
+    }
+
+
+</style>
+<body>
+  <h1>History of Pizza</h1>
+<main>
+  <section class="section-img">
+    <img src="pizzahistory.jpg" alt="old_photo_of_pizza" />
+  </section>
+  <section class="section-text">
+    <p>
+      While topped flatbreads were consumed in ancient Egypt and Rome, Italians are credited as the people who invented pizza first. During the 1700s and 1800s,
+      Naples was a bustling waterfront city especially near the shore, where overcrowding and primarily outdoor living forced locals to find quick, easy ways to feed their families.
+      Pizza became a common dish because of its limited ingredients and handy portability, but it was considered a street food for the poor, unsuitable for the upper class.
+      Little did they know how this seemingly simple creation would turn into a global phenomenon.
+    </p>
+    <hr />
+    <p>
+      Italy may be where pizza was invented, but it wasn’t until Neapolitans crossed the Atlantic that this cheesy cuisine started to really take off.
+      During the 1940s, Italians started serving up their slices in the United States, and Americans quickly took notice of the unique flavors.
+      Pizzerias began popping up in major cities such as Boston, Chicago, and St. Louis, though the first documented pizza parlour was established in New York City in 1905.
+      After World War II, the world began to clamor for all-things Americana, sending pizza into the stratosphere.
+      All around the world chefs began to experiment with this centuries-old creation, making it new again with local flavors and ingredients such as Sicilian-style pizza.
+       No longer relegated as an unfit meal, pizza became an instant classic, launching numerous chains and endless ways to satisfy cravings.
+    </p>
+    <hr />
+    <ul>
+      <li>
+        In 1889, King Umberto I and Queen Margherita visited Naples and enjoyed their first slice of pizza. The queen fancied hers with mozzarella, tomatoes, and basil, and
+        from there on out, this iconic combo has been called the Margherita pizza. This meal is also credited as the first pizza delivery!
+      </li>
+      <li>
+        Though it’s unclear who invented the word “pizza,” the first documented instance is credited to Gaeta, Italy in 997 AD.
+      </li>
+      <li>
+        In 1994, the first pizza was ordered online, making it the first documented Internet purchase. Today, Americans eat 350 slices of pizza every second.
+      </li>
+    </ul>
+    <p>
+      Info from salernospizza.com.
+    </p>
+    </section>
+  </main>
+
+</body>
+</html>

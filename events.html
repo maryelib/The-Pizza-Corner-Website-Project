@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link href="events.css" rel="stylesheet" />
+  <link href="index_layout.css" rel="stylesheet" />
+  <!--Google Font styles-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.jpg" alt="business-logo" class="img-logo" href="main.html"/>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="history.html">History of Pizza</a>
+      <a href="events.html">Events Calendar</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  body {color: black;
+  font-family: 'Quicksand';
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  section {
+  text-align: center; display:
+  flex; flex-direction: column;
+  align-items: center;
+  background-color: white; margin-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 0 10px 40px 0 grey;
+  width: 800px;}
+
+  table {border: solid 4px black;
+        border-collapse: collapse;
+        font-weight: bold; background-color: white;}
+
+  td, th {border: solid 1px black; padding: 10px;}
+
+  caption {text-align: center; padding-bottom: 10px;}
+
+  th {background-color: red; color: white;}
+
+  td:hover {background-color: red; color: white;}
+
+  tr:nth-child(even) {background-color: #EEEEEE;}
+
+  .events {width: 670px;}
+
+  hr {background-color: #fff;
+	border-top: 1px solid #8c8b8b;
+  height: 0;
+  width: 80%;
+  margin: 30px;
+  }
+
+  @media screen and (max-width: 700px) {
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-logo {
+      display: none;
+    }
+
+    .nav-links {
+      margin: 3em 0;
+      font-size: 13px;
+    }
+
+    table {
+      max-width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-logo {
+      display: none;
+    }
+
+    .nav-links {
+      margin: 3em 0;
+    }
+
+    table {
+      width: 400px;
+    }
+  }
+
+</style>
+<main>
+  <section>
+    <h1>News & Upcoming Events</h1>
+    <table>
+    <thead>
+    <caption>
+      Pizza Corner's Best Rated Restaurants Last Month
+    </caption>
+    </thead>
+    <tbody>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Specialty</th>
+        <th>Website</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Joe's Pizza </td>
+        <td>Jersey City, NJ</td>
+        <td>Pepperoni</td>
+        <td> <a href="https://www.joespizzanyc.com/">joespizzanyc.com</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>NY Pizza Suprema</td>
+        <td>New York City, NY</td>
+        <td>Sausage</td>
+          <td> <a href="http://nypizzasuprema.com/">nypizzasuprema.com</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lucali</td>
+        <td>Boston, MA</td>
+        <td>Margherita</td>
+        <td> <a href="https://www.lucali.com/">lucali.com</a></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Bleecker Street Pizza</td>
+        <td>Chicago, IL</td>
+        <td>Cheese</td>
+          <td> <a href="https://bleeckerstreetpizza.com/">bleeckerstreetpizza.com</a></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Di Fara Pizza</td>
+        <td>New York City, NY</td>
+        <td>Vegetable</td>
+        <td> <a href="https://www.difarapizzany.com/">difarapizzany.com</a></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Upside Pizza</td>
+        <td>San Francisco, CA</td>
+        <td>Hawaiian</td>
+        <td> <a href="https://www.upsidepizza.com/">upsidepizza.com</a></a></td>
+      <tr>
+        <td>7</td>
+        <td>Williamsburg Pizza</td>
+        <td>Philladelphia, PA</td>
+        <td>Mushroom</td>
+        <td> <a href="https://www.williamsburgpizza.com/">williamsburgpizza.com</a></a></td>
+    </tbody>
+    </table>
+
+    <hr />
+
+    <table class="events">
+        <caption align="top">Events Calendar - November 2022</caption>
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>30</td>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td style="color: red">7 <br />
+                Meet</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td style="color: red">11 <br />
+                Meet</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td style="color: red">16 <br />
+                Meet</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>28</td>
+                <td style="color: red">29 <br />
+                Meet</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+  </main>
+
+</body>
+</html>

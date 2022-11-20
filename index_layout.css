@@ -1,0 +1,38 @@
+body {
+  color: #536162;
+  background: url("background.jpg")
+}
+/*Navigation Bar*/
+ nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: #536162;
+   background-color: white;
+   box-shadow: 0 10px 40px 0 #CFD2CF;
+ }
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  margin: 3em;
+  font-size: 1.3em;
+  color: red;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin: 0 1em 0 1em;
+  color: red;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+.img-logo {
+  cursor: pointer;
+  width: 200px;
+}

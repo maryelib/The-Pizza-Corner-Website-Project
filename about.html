@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link href="about.css" rel="stylesheet" />
+  <link href="index_layout.css" rel="stylesheet" />
+  <!--Google Font styles-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.jpg" alt="business-logo" class="img-logo" href="main.html"/>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="history.html">History of Pizza</a>
+      <a href="events.html">Events Calendar</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  body {color: black;
+  font-family: 'Quicksand';
+}
+
+section {background-color: white;
+text-align: left;
+box-shadow: 0 10px 40px 0 grey;
+margin-top: 50px;}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+  margin: 20px;
+  font-size: 20px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .nav-links {
+    margin: 3em 0;
+    font-size: 13px;
+  }
+    img {max-width: 500px;}
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .nav-links {
+    margin: 3em 0;
+  }
+
+  img {max-width: 500px;}
+}
+</style>
+<main>
+  <section class="section-text">
+    <h1>About The Pizza Corner</h1>
+    <h2>
+    The Pizza Corner began with founder Mary Bridges. Mary had a passion for pizza and decided to create something to bring others that also have that
+    same love. Today, The Pizza Corner has a regular user count of 20,000 a month, with meetings commonly bringing in 200 fans each. Every month, users
+    can vote on their favorite pizza place, and pizza recipes to feature on the site - creating a constantly evolving and active commmunity.</h2>
+<hr />
+    <h2>Stay tuned into The Pizza Corner on Facebook,
+    Instagram, and Pinterest!</h2>
+    </section>
+    <section class="section-img">
+      <img src="about.jpg" alt="people_around_pizza" />
+    </section>
+  </main>
+
+</body>
+</html>

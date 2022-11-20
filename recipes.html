@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link href="recipes.css" rel="stylesheet" />
+  <link href="index_layout.css" rel="stylesheet" />
+  <!--Google Font styles-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.jpg" alt="business-logo" class="img-logo" href="main.html"/>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="history.html">History of Pizza</a>
+      <a href="events.html">Events Calendar</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  body {color: black;
+  font-family: 'Quicksand';
+}
+  section {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "margherita pepperoni cheese"
+      "bbq-chicken hawaiian hamburger"
+      "mushroom veggie chicago";
+    grid-gap: 1.8rem;
+    text-align: center;
+  }
+
+  .recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans';
+    background-color: white;
+    box-shadow: 0 10px 40px 0 #CFD2CF;
+    border: 2px solid grey;
+  }
+
+  button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family: 'Quicksand';
+    border: 4px solid;
+    padding: 0.5em;
+    box-shadow: 0 0 20px 0 #E97777;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin: 20px;
+  }
+
+.recipe-img {width: 200px;
+height: 200px;
+box-shadow: 0 10px 40px 0 #CFD2CF;
+border: 2px solid #CFD2CF;
+margin-top: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .nav-links {
+    margin: 3em 0;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .nav-links {
+    margin: 3em 0;
+  }
+}
+
+</style>
+<main>
+  <section>
+
+      <div class="recipes" id="margherita">
+        <img src="margherita.jpg" alt="margherita pizza" class="recipe-img"/>
+        <h3>Margherita</h3>
+        <p>Connect back with Italy with a classic!</p>
+        <button onclick="location.href='https://www.jocooks.com/recipes/margherita-pizza/'" type="button">Full Recipe</button>
+          </div>
+      <div class="recipes" id="pepperoni">
+          <img src="pepperoni.jpg" alt="pepperoni pizza" class="recipe-img"/>
+          <h3>Pepperoni</h3>
+          <p>Pepperoni and pizza were made for each other.</p>
+          <button onclick="location.href='https://myfoodbook.com.au/recipes/show/pepperoni-pizza'" type="button">Full Recipe</button>
+            </div>
+      <div class="recipes" id="cheese">
+          <img src="cheese.jpg" alt="cheese pizza" class="recipe-img"/>
+          <h3>Three Cheese</h3>
+          <p>Everyone loves cheese pizza!</p>
+          <button onclick="location.href='https://preppykitchen.com/cheese-pizza/'" type="button">Full Recipe</button>
+            </div>
+      <div class="recipes" id="bbq-chicken">
+          <img src="bbq.jpg" alt="bbq chicken pizza" class="recipe-img"/>
+          <h3>BBQ Chicken</h3>
+          <p>A southwest special with a unique twist.</p>
+          <button onclick="location.href='https://www.budgetbytes.com/bbq-chicken-pizza/'" type="button">Full Recipe</button>
+            </div>
+      <div class="recipes" id="hawaiian">
+          <img src="hawaiian.jpg" alt="hawaiian pizza" class="recipe-img"/>
+          <h3>Hawaiian</h3>
+          <p>Pineapple on pizza? Yes!</p>
+          <button onclick="location.href='https://www.jessicagavin.com/hawaiian-pizza/'" type="button">Full Recipe</button>
+            </div>
+      <div class="recipes" id="hamburger">
+          <img src="cheeseburger.jpg" alt="cheeseburger pizza" class="recipe-img"/>
+          <h3>Bacon Cheeseburger</h3>
+          <p>Ever crave a cheeseburger, but on a pizza?</p>
+          <button onclick="location.href='https://peaceloveandlowcarb.com/bacon-cheeseburger-pizza-low-carb-gluten-free/'" type="button">Full Recipe</button>
+            </div>
+      <div class="recipes" id="mushroom">
+          <img src="mushroom.jpg" alt="mushroom pizza" class="recipe-img"/>
+          <h3>Mushroom</h3>
+          <p>Calling all mushroom lovers!</p>
+          <button onclick="location.href='https://www.acouplecooks.com/mushroom-pizza-with-fresh-herbs/'" type="button">Full Recipe</button>
+            </div>
+        <div class="recipes" id="veggie">
+          <img src="veggie.jpg" alt="veggie pizza" class="recipe-img"/>
+          <h3>Veggie</h3>
+          <p>For our meatless friends!</p>
+          <button onclick="location.href='https://www.twopeasandtheirpod.com/best-veggie-pizza/'" type="button">Full Recipe</button>
+            </div>
+        <div class="recipes" id="chicago">
+          <img src="chicago.jpg" alt="chicago deep dish pizza" class="recipe-img"/>
+          <h3>Chicago Style</h3>
+          <p>Deep dish pizza made to perfection.</p>
+          <button onclick="location.href='https://www.recipegirl.com/chicago-style-deep-dish-pizza-recipe/'" type="button">Full Recipe</button>
+            </div>
+
+    </section>
+  </main>
+
+</body>
+</html>

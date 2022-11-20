@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link href="index_styles.css" rel="stylesheet" />
+  <link href="index_layout.css" rel="stylesheet" />
+  <!--Google Font styles-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.jpg" alt="business-logo" class="img-logo" href="index.html"/>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="history.html">History of Pizza</a>
+      <a href="events.html">Events Calendar</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+section {
+  flex-direction: column;
+  font-family: 'Quicksand';
+  font-weight: bold;
+}
+  h1 {
+      margin: 50px;
+      font-size: 30px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    background-color: #F7F7F7;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid red;
+  }
+
+   div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: .2em;
+   }
+
+  legend, .resume {
+    margin-right: 1em;
+  }
+
+  textarea {
+    width: 300px;
+    height: 90px;
+  }
+
+  #submit-button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family: 'Quicksand';
+    border: 4px solid white;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 0 20px 0 grey;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 200px;
+  }
+  #submit-button:hover {
+    background-color: red;
+  }
+
+  /*Media*/
+  @media screen and (max-width: 700px) {
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-logo {
+      display: none;
+    }
+
+    .nav-links {
+      margin: 3em 0;
+      font-size: 13px;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-logo {
+      display: none;
+    }
+
+    .nav-links {
+      margin: 3em 0;
+    }
+  }
+}
+</style>
+<main>
+    <section>
+      <h1>Connect with a Pizza Corner Representative</h1>
+      <form method="post">
+        <fieldset>
+          <div>
+            <label for="nameBox">First Name</label>
+            <input type="text" id="nameBox" name="firstName" placeholder="First Name" required/>
+            </div>
+            <div>
+              <label for="nameBox">Last Name</label>
+              <input type="text" id="nameBox" name="lastName" placeholder="Last Name" required/>
+              </div>
+          <div>
+             <label for="phoneBox">Phone Number</label>
+             <input name="custPhone" id="phoneBox" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+            </div>
+          <div>
+              <label for="emailBox">E-mail</label>
+              <input name="custPhone" id="emailBox" placeholder="example@gmail.com" required />
+                </div>
+          <div>
+              <label for="ftime">Is this your first time on our website?</label>
+              <input name="orderType" id="ftime" type="checkbox">
+                </div>
+        <fieldset>
+          <legend>What are you inquiring about?</legend>
+          <div>
+              <label>Media</label>
+              <input name="media" value="full" type="radio">
+          </div>
+          <div>
+              <label>Careers</label>
+              <input name="careers" value="full" type="radio">
+          </div>
+          <div>
+              <label>Restaurant of the Month/Year</label>
+              <input name="rotm" value="full" type="radio">
+          </div>
+          <div>
+              <label>Review</label>
+              <input name="review" value="full" type="radio">
+          </div>
+            </fieldset>
+          <div>
+            <legend>Send us a short note about your inquiry:</legend>
+            <textarea name="textBox" id="textBox"></textarea>
+                </div>
+           <div>
+             <label for="yearSL">How did you find us?</label>
+             <select id="yearSL" name="year">
+                <option value="1">Google</option>
+                <option value="2">Social Media</option>
+                <option value="3">TV ad</option>
+                <option value="4">A friend</option>
+                <option value="5">Other</option>
+             </select>
+            </div>
+              <button type="button" onclick="clickAlert()" id="submit-button">Submit</button>
+          </fieldset>
+          </form>
+    </section>
+</main>
+
+</body>
+</html>
